@@ -7,12 +7,16 @@ paginate = 10                                 # 首页每页显示文章数
 enableRobotsTXT = true                        # 允许搜索引擎抓取
 
 [params]
+
+  description = "Hi, this is ZouMing. I’m documenting my learning notes in this blog"          # 这个只给搜索引擎和社交卡片用，不会显示在页面上
+
+  [params.homeInfoParams]
     # --- 首页展示 ---
-  description = "Hi, this is ZouMing. I’m documenting my learning notes in this blog"          # SEO 描述 + 首页副标题
+  Title = "Welcome to Zou'Log"
+  Content = "I’m documenting my learning notes in this blog"
 
     # --- 文章页面 ---
   ShowReadingTime = true                      # 显示预计阅读时间
-  ShowShareButtons = true                     # 显示分享按钮
   ShowPostNavLinks = true                     # 显示上一篇/下一篇导航
   ShowBreadCrumbs = true                      # 显示面包屑导航
   ShowCodeCopyButtons = true                  # 代码块显示复制按钮
@@ -21,18 +25,18 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
 
 [[menu.main]]
   identifier = "archives"
-  name = "📦 归档"
+  name = "Archives"
   url = "/archives/"
   weight = 5
 
 [[menu.main]]
   identifier = "tags"
-  name = "🏷️ 标签"
+  name = "Tags"
   url = "/tags/"
   weight = 10
 
 [[menu.main]]
   identifier = "about"
-  name = "👤 关于"
+  name = "About"
   url = "/about/"
   weight = 15
