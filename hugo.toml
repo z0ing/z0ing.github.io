@@ -17,15 +17,11 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   ShowToc = true                              # 显示文章目录(TOC)
   TocOpen = false                             # 目录默认折叠(true=展开)
 
-[params.homeInfoParams]
-    # --- 首页展示 ---
-  Title = "Welcome to Zou'Log"
-  # 通过 HTML 手动控制间距、添加按钮或图标
-  Content = """
-    <p style="margin-bottom:0.5rem;">I'm documenting my learning notes in this blog</p>
-    <a href="/posts/" style="font-size:0.9rem;">→ Browse all posts</a>
-  """
-
+    [params.homeInfoParams]
+        # --- 首页展示 ---
+    Title = "Welcome to Zou'Log"
+    # 通过 HTML 手动控制间距、添加按钮或图标
+    Content = "I'm documenting my learning notes in this blog"
 
 
 [[menu.main]]
@@ -51,3 +47,14 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   name = "About"
   url = "/about/"
   weight = 20
+
+# 输出格式（确保 RSS 正常生成）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 标记语言配置（支持 Markdown 扩展语法）
+[markup]
+  [markup.highlight]
+    style = "dracula"           # 代码高亮主题
+    lineNos = false             # 不显示行号
+    guessSyntax = true          # 自动识别代码语言
