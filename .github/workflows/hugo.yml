@@ -1,31 +1,27 @@
+# .github/workflows/hugo.yml
 name: Deploy Hugo to GitHub Pages
 
 on:
   push:
     branches: [main]
-  workflow_dispatch: # 允许手动触发部署
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5 # 更新至 v5
+        uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v4 # 更新至 v4
+        uses: peaceiris/actions-hugo@v3   # ✅ 必须是 v3，不是 v4！
         with:
           hugo-version: 'latest'
           extended: true
@@ -34,17 +30,9 @@ jobs:
         run: hugo --minify
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4 # 更新至 v4
+        uses: actions/upload-pages-artifact@v3   # ✅ 必须是 v3
         with:
           path: ./public
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy
+        uses: actions/deploy-pages@v4   # ✅ v4 是有效的，但需确保前面步骤无错
