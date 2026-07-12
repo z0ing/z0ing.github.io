@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3   # ✅ 必须是 v3，不是 v4！
+        uses: peaceiris/actions-hugo@v3  
         with:
           hugo-version: 'latest'
           extended: true
@@ -30,9 +30,9 @@ jobs:
         run: hugo --minify
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3   # ✅ 必须是 v3
+        uses: actions/upload-pages-artifact@v3   
         with:
           path: ./public
 
       - name: Deploy
-        uses: actions/deploy-pages@v4   # ✅ v4 是有效的，但需确保前面步骤无错
+        uses: actions/deploy-pages@v4   
