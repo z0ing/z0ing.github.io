@@ -1,4 +1,7 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://z0ing.github.io/'
+locale = 'zh-cn'
+title = "Zou'Log"
 theme = "PaperMod"
+
+paginate = 10                                 # 首页每页显示文章数
+enableRobotsTXT = true                        # 允许搜索引擎抓取
