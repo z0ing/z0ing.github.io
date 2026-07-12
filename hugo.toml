@@ -25,8 +25,8 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
 
 [[menu.main]]
   identifier = "posts"
-  name = "Logs"
-  url = "/posts/"
+  name = "Posts"
+  url = "/"
   weight = 5
 
 [[menu.main]]
