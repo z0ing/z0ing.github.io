@@ -7,7 +7,6 @@ paginate = 10                                 # 首页每页显示文章数
 enableRobotsTXT = true                        # 允许搜索引擎抓取
 
 [params]
-
   description = "Hi, this is ZouMing. I’m documenting my learning notes in this blog"          # 这个只给搜索引擎和社交卡片用，不会显示在页面上
     # --- 文章页面 ---
   ShowReadingTime = true                      # 显示预计阅读时间
@@ -17,10 +16,10 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   ShowToc = true                              # 显示文章目录(TOC)
   TocOpen = false                             # 目录默认折叠(true=展开)
 
-    [params.homeInfoParams]
-        # --- 首页展示 ---
-    Title = "Welcome to Zou'Log"
-    Content = "I'm documenting my learning notes in this blog."
+  [params.homeInfoParams]
+      # --- 首页展示 ---
+  Title = "Welcome to Zou'Log"
+  Content = "I'm documenting my learning notes in this blog."
 
 
 [[menu.main]]
