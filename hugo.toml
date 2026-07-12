@@ -20,7 +20,7 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
     [params.homeInfoParams]
         # --- 首页展示 ---
     Title = "Welcome to Zou'Log"
-    Content = "I'm documenting my learning notes in this blog"
+    Content = "I'm documenting my learning notes in this blog."
 
 
 [[menu.main]]
