@@ -23,6 +23,7 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   # 通过 HTML 手动控制间距、添加按钮或图标
   Content = """
     <p style="margin-bottom:0.5rem;">I'm documenting my learning notes in this blog</p>
+    <a href="/posts/" style="font-size:0.9rem;">→ Browse all posts</a>
   """
 
 
