@@ -17,6 +17,19 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   ShowToc = true                              # 显示文章目录(TOC)
   TocOpen = false                             # 目录默认折叠(true=展开)
 
+  [params.homeInfoParams]
+    # --- 首页展示 ---
+  Title = "Welcome to Zou'Log"
+  Content = "I’m documenting my learning notes in this blog"
+  height = 30
+
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Logs"
+  url = "/posts/"
+  weight = 5
+
 [[menu.main]]
   identifier = "archives"
   name = "Archives"
