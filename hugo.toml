@@ -13,6 +13,7 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   ShowPostNavLinks = true                     # 显示上一篇/下一篇导航
   ShowBreadCrumbs = true                      # 显示面包屑导航
   ShowCodeCopyButtons = true                  # 代码块显示复制按钮
+  ShowScrollToTop = true                      # 回到顶部按钮
   ShowToc = true                              # 显示文章目录(TOC)
   TocOpen = false                             # 目录默认折叠(true=展开)
 
