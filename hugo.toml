@@ -21,7 +21,7 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
     # --- 首页展示 ---
   Title = "Welcome to Zou'Log"
   Content = "I’m documenting my learning notes in this blog"
-  height = 30
+
 
 
 [[menu.main]]
@@ -34,16 +34,16 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
   identifier = "archives"
   name = "Archives"
   url = "/archives/"
-  weight = 5
+  weight = 10
 
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
   url = "/tags/"
-  weight = 10
+  weight = 15
 
 [[menu.main]]
   identifier = "about"
   name = "About"
   url = "/about/"
-  weight = 15
+  weight = 20
