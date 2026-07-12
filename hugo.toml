@@ -5,3 +5,7 @@ theme = "PaperMod"
 
 paginate = 10                                 # 首页每页显示文章数
 enableRobotsTXT = true                        # 允许搜索引擎抓取
+
+[params]                                      #图标
+  # 仅当文件名不是默认名称时才需要设置
+  favicon = "/favicon.svg"
