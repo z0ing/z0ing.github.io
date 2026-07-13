@@ -19,8 +19,15 @@ enableRobotsTXT = true                        # 允许搜索引擎抓取
 
   [params.homeInfoParams]
       # --- 首页展示 ---
-  Title = "Welcome to Zou'Log"
-  Content = "I'm documenting my learning notes in this blog."
+    Title = "Welcome to Zou'Log"
+    Content = "I'm documenting my learning notes in this blog."
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/z0ing"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:zouming90@yeah.com"
 
 
 [[menu.main]]
